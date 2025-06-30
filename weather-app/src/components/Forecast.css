@@ -1,0 +1,25 @@
+.forecast {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  display: inline-block;
+}
+
+.forecast-cards {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast-card {
+  background: #0078D7;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  width: 90px;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
