@@ -1,7 +1,7 @@
 .container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* background: linear-gradient(135deg, #74ebd5, #ACB6E5); */
-  background-color: black;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  /* background-color: black; */
   min-height: 100vh;
   padding: 2rem;
   display: flex;
