@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+const apiKey = import.meta.env.VITE_WEATHER_KEY;
 import clear from "./assets/Clear.png";
 import rainy from "./assets/rainy.png";
 import cloudy from "./assets/cloudy.png";
@@ -12,7 +13,7 @@ export default function WeatherApp() {
   const [forecast, setForecast] = useState([]);
   const [error, setError] = useState("");
 
-  const apiKey = "e6023752812dc172c81aeabb690412e6";
+  console.log("Loaded API Key:", apiKey);
 
   const fetchWeather = async () => {
     if (!city) {
@@ -21,7 +22,7 @@ export default function WeatherApp() {
       setForecast([]);
       return;
     }
-
+    console.log(apiKey);
     try {
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city.trim()}&appid=${apiKey}&units=metric`
